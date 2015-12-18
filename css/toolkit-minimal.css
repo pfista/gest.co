@@ -360,8 +360,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-  /*font-family: "freight-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "freight-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 100;
   line-height: 1.2;
   color: inherit;
@@ -5013,13 +5012,13 @@ button.list-group-item-danger.active:focus {
 }
 body {
   font-weight: 300;
-  letter-spacing: -0.02em;
+  letter-spacing: 0.01em;
 }
 .lead {
   font-size: 21px;
   font-weight: 300;
   line-height: 1.6;
-  letter-spacing: -0.02em;
+  letter-spacing: 0.01em;
 }
 @media (min-width: 768px) {
   .lead {
@@ -5079,6 +5078,22 @@ body {
   .text-lg-center {
     text-align: center;
   }
+}
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3 {
+  font-family: "brandon-grotesque", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  font-family: "freight-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .alert-dark {
   background-color: rgba(0, 0, 0, 0.9);
@@ -8307,7 +8322,7 @@ fieldset[disabled] .block-inverse .btn-outline.btn-default.active {
 }
 .h1.block-title,
 h1.block-title {
-  font-size: 40px;
+  font-size: 49px;
   line-height: 1;
 }
 .block .lead {
@@ -8379,7 +8394,7 @@ h1.block-title {
   }
   .h1.block-title,
   h1.block-title {
-    font-size: 72px;
+    font-size: 57px;
   }
 }
 .navbar-transparent {
@@ -8924,6 +8939,98 @@ img.zoom-img {
   left: auto;
   right: 20px;
 }
+/*
+ * Minimal Application level overrides
+ * (things that dont make sense in a toolkit :)
+ * copyright @colossal 2015
+ */
+.block {
+  overflow: hidden;
+}
+/* navbar */
+.app-navbar {
+  font-size: 13px;
+  letter-spacing: .15em;
+}
+.app-navbar .navbar-brand {
+  font-size: 13px;
+}
+/* intro block */
+.app-block-intro {
+  padding-top: 20px;
+}
+.app-block-intro img {
+  width: 80%;
+  margin-bottom: -45%;
+}
+/* block img */
+.app-block-game img,
+.app-block-stats img {
+  width: 100%;
+}
+@media (max-width: 480px) {
+  .app-block-game-img {
+    -webkit-transform: scale(1.5) !important;
+        -ms-transform: scale(1.5) !important;
+            transform: scale(1.5) !important;
+  }
+}
+/* stats hr */
+.app-block-stats hr {
+  width: calc(130%);
+}
+/* design block */
+.app-block-design > .container > .row {
+  z-index: 2;
+}
+.app-block-design-img {
+  float: left;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .app-block-design-img {
+    margin-top: -320px;
+    margin-left: 0;
+  }
+}
+/* footer block */
+.app-block-footer {
+  background-color: #1b1c1d;
+  color: #444;
+  color: rgba(116, 119, 123, 0.5);
+}
+/* transforms */
+.app-translate-15 {
+  -webkit-transform: translateY(15px);
+  -ms-transform: translateY(15px);
+  transform: translateY(15px);
+}
+.app-translate-50 {
+  -webkit-transform: translateY(50px);
+  -ms-transform: translateY(50px);
+  transform: translateY(50px);
+}
+.app-translate-5 {
+  -webkit-transform: translateY(5%);
+  -ms-transform: translateY(5%);
+  transform: translateY(5%);
+}
+.app-translate-10 {
+  -webkit-transform: translateY(10%);
+  -ms-transform: translateY(10%);
+  transform: translateY(10%);
+}
+/* brand */
+@media (max-width: 400px) {
+  .app-myphone-brand {
+    font-size: 46px !important;
+  }
+}
+@media (max-width: 350px) {
+  .app-myphone-brand {
+    font-size: 42px !important;
+  }
+}
 h1.text-uppercase,
 h2.text-uppercase,
 h3.text-uppercase,
@@ -8969,6 +9076,150 @@ h6,
   margin-bottom: 5px;
   color: #bbbbbb;
   text-transform: uppercase;
+}
+/* make keyframes that tell the start state and the end state of our object */
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.social-svg {
+  fill: #aaaaaa;
+  opacity: .3;
+}
+.social-svg:hover {
+  fill: #bbbbbb;
+  opacity: .4;
+}
+.play-video,
+svg .play-video {
+  background-size: 20px 20px;
+  background-image: url("/img/right-arrow-circle.svg");
+  background-position: left center;
+  padding-left: 25px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  color: #000;
+  text-decoration: none;
+  opacity: .6;
+}
+.modal-backdrop {
+  opacity: 0.85 !important;
+}
+.play-video:focus,
+.play-video:hover {
+  color: #000;
+  opacity: 9;
+  text-decoration: none;
+}
+.linkedin,
+svg .linkedin {
+  background-size: 20px 20px;
+  background-image: url("/img/linkedin.svg");
+  background-position: left center;
+  padding-left: 25px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  color: #000;
+  text-decoration: none;
+  opacity: .6;
+}
+.linkedin:focus,
+.linkedin:hover {
+  color: #000;
+  opacity: 9;
+  text-decoration: none;
+}
+.stop-video {
+  background-size: 20px 20px;
+  background-image: url("/img/close.svg");
+  background-position: left center;
+  padding-left: 25px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  text-decoration: none;
+  color: #fff;
+  fill: #fff;
+}
+.stop-video:focus,
+.stop-video:hover {
+  text-decoration: none;
+  color: #cdcdcd;
+}
+.fade-in {
+  opacity: 0;
+  /* make things invisible upon start */
+  -webkit-animation: fadeIn ease-in 1;
+  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  animation: fadeIn ease-in 1;
+  -webkit-animation-fill-mode: forwards;
+  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+}
+.fade-in.fast {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+.store {
+  padding-left: 1em;
+  padding-right: 1em;
+  border-radius: 1000em;
+  color: #fff;
+  background-color: #efefef !important;
+}
+.navbar-logo {
+  padding-top: 3px;
+}
+.block-light {
+  background: #efefef;
+  color: #333;
+}
+.gest-hero-img {
+  width: 70%;
+  margin-bottom: -120px;
+}
+@media (min-width: 768px) {
+  .gest-hero-img {
+    width: 50%;
+    margin-top: -30px;
+    margin-bottom: -80px;
+    height: 480px;
+  }
+}
+@media (min-width: 991px) {
+  .gest-hero-img {
+    width: 50%;
+    margin-top: -120px;
+    margin-bottom: -80px;
+    height: 480px;
+  }
+}
+::-moz-selection {
+  color: #efefef;
+  background: #eea236;
+}
+::selection {
+  color: #efefef;
+  background: #eea236;
+}
+:active {
+  outline: none !important;
+}
+* {
+  outline: none !important;
 }
 
 /*# sourceMappingURL=toolkit-minimal.css.map */

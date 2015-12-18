@@ -2341,6 +2341,17 @@
   // ENTER CLASS DEFINITION
   // ======================
 
+$("#play-video").on('hidden.bs.modal', function (e) { $("#play-video iframe").attr("src", $("#play-video iframe").attr("src"));
+});
+
+}(jQuery);
+
++function ($) {
+  'use strict';
+
+  // ENTER CLASS DEFINITION
+  // ======================
+
   var dataApi = '[data-transition="entrance"]'
   var Enter = function (element, options) {
     if (!$.support.transition) return
