@@ -13,7 +13,7 @@
   <script>try{Typekit.load({ async: true });}catch(e){}</script>
 
   <link rel="icon" href="/img/favicon.png">
-  <link href="/css/toolkit-minimal.css" rel="stylesheet">
+  <link href="/css/toolkit-minimal.min.css" rel="stylesheet">
 
   <!-- Facebook Pixel Code -->
   <script>
@@ -29,7 +29,6 @@
   src="https://www.facebook.com/tr?id=1011708035546093&ev=PageView&noscript=1"
   /></noscript>
   <!-- End Facebook Pixel Code -->
-   
 </head>
 
 <body>
@@ -39,6 +38,7 @@
 		<li> <a href="https://shop.trycelery.com/page/55a02a4af2de0e03005becea" data-celery="55a02a4af2de0e03005becea" data-celery-version="v2">Pre-order Now</a> </li>
 
     <li class=""> <a href="/about">About us</a> </li>
+    <li class=""> <a href="/technology">Technology</a> </li>
 		<li><a href="//gest.totemapp.com" target="_blank">Press and media</a></li>
 
     <li class="nav-divider"></li>
@@ -56,7 +56,8 @@
 <div class='stage' id='stage'> <!-- don't forget to close this later -->
 	
 <nav class="navbar navbar-default navbar-padded text-uppercase app-navbar">
-  <div class="container fade-in fast" data-transition="entrance" style="transform: translateY(-70px)"> <div class="navbar-header">
+  <div class="container reveal-slide-down">
+      <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed p-x-0"
               data-target="#stage" data-toggle="stage" data-distance="-250">
         <span class="sr-only">Toggle navigation</span>
@@ -78,6 +79,9 @@
 					<a href="//twitter.com/trygest" target="_blank"><img class="social-svg" src="/img/twitter.svg" width="20px"/></a>
         </li>
         <li >
+          <a href="/technology">Technology</a>
+        </li>
+        <li >
           <a href="/about">About Us</a>
         </li>
 		<li> <a class='store' href="https://shop.trycelery.com/page/55a02a4af2de0e03005becea" data-celery="55a02a4af2de0e03005becea" data-celery-version="v2">Pre-order Now</a> </li>
@@ -90,21 +94,24 @@
 <div class="block block-overflow-hidden p-b-xl p-t-xl ">
   <div class="container">
     <div class="row">
-			<div class='col-xs-12 text-xs-center col-sm-6 text-sm-right'>
-				<h1 class="block-title">Work with your hands</h1>
-				<p class='lead text-muted'>Gest is a digital toolkit that allows you to work with your hands in a more intuitive way.</p>
+			<div class='col-xs-12 text-xs-center col-sm-6 text-sm-right reveal-fade invisible'>
+				<h1 class="block-title">Work with your hands.</h1>
+        <p class='lead text-muted'>
+        Gest is a wearable that brings interaction to a whole new level.
+        </p>
 				<p class='lead text-muted'>
-				<a class='play-video' data-toggle="modal"	onclick="ga('send', 'event', 'video', 'play', 'gest-kickstarter-video');" href="#play-video">Play Video</a>
+				<a class='play-video' data-toggle="modal"	onclick="ga('send', 'event',
+          'video', 'play', 'gest-kickstarter-video');" href="#play-video"><span class='icon icon-chevron-with-circle-right'></span> Play Video</a>
 				</p>
 			</div>
-      <div class="col-xs-10 col-xs-offset-1	col-sm-6 col-sm-offset-0 gest-hero-img" data-transition="entrance" style="transform: translateY(80px)">
+      <div class="col-xs-10 col-xs-offset-1	col-sm-6 col-sm-offset-0 gest-hero-img reveal-fade" >
         <img class="img-responsive fade-in fast" src="/img/black-five-arm.jpg">
       </div>
     </div>
   </div>
 </div>
 
-<div class="modal fade" id="play-video" tabindex="-1">
+<div class="modal " id="play-video" tabindex="-1">
 	<div class="container text-center">
 		<div class="row p-t-lg">
 			<div class="col-sm-12">
@@ -118,8 +125,90 @@
 </div>
 
 
-<div class="block block-light p-t-md p-b-md text-center">
+<div class="block block-light p-t-lg p-b-lg text-center">
   <div class="container-fluid">
+    <div class="row invisible reveal-slide">
+      <div class="col hidden-xs col-xs-8 col-xs-offset-2 col-sm-offset-0 col-sm-6 col-md-3">
+				<blockquote class="pull-quote ">
+        <a href="http://www.technologyreview.com/news/542911/get-to-grips-with-virtual-objects-using-this-stripped-down-glove" target="_blank"><img class='img-responsive center-block press-logo' width="200px" src="/img/logos/mit.png"></a>
+					<p class=''>
+						"Get to grips with virtual objects using this stripped down glove."
+					</p>
+					<cite>MIT Technology Review</cite>
+				</blockquote>
+      </div>
+      <div class="col col-xs-8 col-xs-offset-2 col-sm-offset-0 col-sm-6 col-md-3 ">
+				<blockquote class="pull-quote ">
+        <a href="http://www.dailydot.com/technology/gest-gesture-control-hand-tracker" target="_blank"><img class='img-responsive center-block press-logo' width="200px" src="/img/logos/dd.png"></a>
+					<p class=''>
+						"Being hands-off usually means relinquishing control. With Gest, it's the exact opposite."
+					</p>
+					<cite>The daily dot</cite>
+				</blockquote>
+      </div>
+      <div class="col col-xs-8 col-xs-offset-2 col-sm-offset-0 col-sm-6 col-md-3">
+				<blockquote class="pull-quote ">
+        <a href="http://www.theverge.com/2015/10/29/9626772/gest-hand-motion-gesture-tracking-kickstarter" target="_blank"><img class='img-responsive center-block press-logo' width="200px" src="/img/logos/verge.png"></a>
+					<p class=''>
+						"Gest is like a Nintendo Power Glove you might actually want to use."
+					</p>
+					<cite>The Verge</cite>
+				</blockquote>
+      </div>
+      <div class="col hidden-xs col-xs-8 col-xs-offset-2 col-sm-offset-0 col-sm-6 col-md-3">
+				<blockquote class="pull-quote ">
+        <a href="http://www.businessinsider.com/control-computer-with-hands-gest-2015-11" target="_blank"><img class='img-responsive center-block press-logo' width="200px" src="/img/logos/bi.png"></a>
+					<p class=''>
+						“This new wearable device lets you type without using a keyboard."
+					</p>
+					<cite>Business Insider</cite>
+				</blockquote>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="block ">
+	<div class="container">
+
+    <div class="row p-b-lg reveal-fade">
+      <div class="col col-xs-8 col-xs-offset-2 col-sm-offset-0 col-sm-5">
+        <img src="/img/black-palm.jpg" class='center-block img-responsive' />
+      </div>
+      <div class="col col-xs-12 col-sm-7">
+				<h1 class="block-title">More intuitive control.</h1>
+        <p class='lead'>
+        When it comes to interacting with a computer, your options are either
+        two-dimensional like the mouse, or binary like the keys on your
+        keyboard. But your hands are three-dimensional and non-binary, so your
+        tools should be too.
+        </p>
+      </div>
+    </div>
+
+    <div class="row p-t-lg reveal-fade">
+      <div class="col col-xs-12 col-sm-8 col-sm-push-4">
+        <img src="/img/black-point.jpg" width="90%" class='center-block img-responsive' />
+      </div>
+      <div class="col col-xs-12 col-sm-4 col-sm-pull-8">
+        <h1 class="block-title">Get things done, quick.</h1>
+				<p class='lead'>Gest lets you map hand gestures to
+        keyboard shortcuts, so you can control almost any app.
+        Change the song? Flick your finger to the right. Increase the volume? Twist
+        your hand. The best part is that you get to decide which gestures map to
+        which actions.</p>
+        <p class='lead'><a class='btn btn-primary btn-pill'
+            href="technology">Gest's technology<span class='icon icon-chevron-thin-right'></span></a></p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<div class="block block-light p-t-md p-b-md text-center">
+  <div class="container-fluid reveal-fade">
 			<a href="/kickstarter" target="_blank"><img class='img-responsive center-block' width="200px" src="/img/ks.png"></a>
    <blockquote class="pull-quote">
 			<p class="m-t-0 p-t p-b m-b-0">Gest was successfully funded on Kickstarter on November 28th, 2015. Thank you for supporting us!</p>
@@ -128,9 +217,75 @@
   </div>
 </div>
 
+<div class="block block-dev">
+	<div class="container">
+
+    <div class="row reveal-fade">
+      <div class="col col-xs-8 col-xs-offset-2 text-center">
+        <h1 class='title-code'>Welcome, developers();</h1>
+      </div>
+    </div>
+<div class="row text-center reveal-fade">
+      <div class="col col-xs-10 col-xs-offset-1 p-t">
+        <p class='lead'>We provide access to <strong>four</strong> types of data.</p>
+      </div>
+    </div>
+
+    <div class="row p-t-md p-b-md reveal-fade">
+      <div class="col col-xs-12 col-sm-3">
+        <span class='icon-line-graph icon '></span>
+        <p> The first is raw sensor data coming directly from our 5 IMUs. This
+        option gives
+        you the most control, but non-trival programming is required to make
+        this data useful. 
+        </p>
+      </div>
+      <div class="col col-xs-12 col-sm-3">
+        <span class='icon-code icon '></span>
+        <p>
+        The second is access to motion processed data, which means you get
+        finger and hand orientations in real time. This makes it really
+        easy to integrate with VR/AR devices and video games.
+        </p>
+      </div>
+      <div class="col col-xs-12 col-sm-3">
+        <span class='icon-hand icon '></span>
+        <p>
+        Third,
+        you’ll have access to gesture data. You’ll be able to create and
+        describe your own
+        gestures, and get notified when they're made. 
+        </p>
+      </div>
+      <div class="col col-xs-12 col-sm-3">
+        <span class='icon-keyboard icon '></span>
+        <p>
+      Finally, if you have two controllers,
+        you'll have access to typing data.
+        You'll get notified of keypresses, word predictions, changes and
+        selections. 
+        </p>
+      </div>
+    </div>
+    <div class="row text-center reveal-fade">
+      <div class="col col-xs-6 col-xs-offset-3">
+        <p><a class="typeform-share link" href="https://gest.typeform.com/to/THKDIX" data-mode="2" target="_blank">Sign up</a>
+<script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}})()</script> to get access to our SDK.</p>
+
+
+      </div>
+    </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
 <div class="block block-inverse text-center p-t-lg p-b-lg">
 	<div class="container-fluid">
-		<div class='block-foreground'>
+		<div class='block-foreground reveal-fade'>
 				<p class="lead">
 					Join our mailing list to stay updated.
 				</p>
@@ -147,10 +302,11 @@
 	</div>
 </div>
 
+
 <div class="block app-block-footer p-t p-b">
 		<div class='row text-center'>
 			</div>
-  <div class="container">
+  <div class="container reveal-fade">
     <div class="row">
       <div class="col-sm-2 m-b">
         <ul class="list-unstyled list-spaced">
@@ -188,6 +344,8 @@
 </div> <!-- closes stage shelf -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.0.6/scrollreveal.min.js"></script>
     <script src="/js/toolkit.js"></script>
 		<script async type="text/javascript" src="https://www.trycelery.com/js/celery.js"></script>
 

@@ -8939,6 +8939,92 @@ img.zoom-img {
   left: auto;
   right: 20px;
 }
+/***************************** TECH ************************/
+.tech-block-fill-height {
+  display: table;
+  width: 100%;
+  height: 95vh;
+}
+.tech-title {
+  font-size: 25px;
+}
+.tech-lead {
+  font-size: 18px;
+  padding: 0 0 0 0 ;
+  margin-bottom: 5px;
+}
+.tech-text {
+  font-size: 15px;
+}
+.techpage p.lead {
+  font-size: 14px !important;
+  padding: 0 0 0 0 ;
+  margin-bottom: 5px;
+}
+.v-tech-center {
+  position: relative;
+}
+.block-xs-bottom {
+  top: -52px;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .tech-title {
+    font-size: 35px;
+  }
+  .tech-lead {
+    font-size: 20px;
+    padding: 0 0 0 0 ;
+    margin-bottom: 5px;
+  }
+  .tech-text {
+    font-size: 15px;
+  }
+  .tech-block-fill-height {
+    height: 75vh;
+  }
+  .v-tech-center {
+    top: 40%;
+    -webkit-transform: translateY(-60%);
+        -ms-transform: translateY(-60%);
+            transform: translateY(-60%);
+  }
+}
+@media (min-width: 992px) {
+  .tech-title {
+    font-size: 60px;
+  }
+  .tech-lead {
+    font-size: 24px;
+    padding: 0 0 0 0 ;
+    margin-bottom: 5px;
+  }
+  .tech-text {
+    font-size: 20px;
+  }
+  .tech-block-fill-height {
+    height: 80vh;
+  }
+  .techpage p.lead {
+    font-size: 35px !important;
+    padding: 0 0 0 0 ;
+    margin-bottom: 5px;
+  }
+  .v-tech-center {
+    top: 50%;
+    -webkit-transform: translateY(-60%);
+        -ms-transform: translateY(-60%);
+            transform: translateY(-60%);
+  }
+  .block-xs-bottom {
+    top: -52px;
+  }
+}
+video::-webkit-media-controls-enclosure {
+  display: none !important;
+}
+video::-webkit-media-controls {
+  display: none !important;
+}
 /*
  * Minimal Application level overrides
  * (things that dont make sense in a toolkit :)
@@ -8951,9 +9037,16 @@ img.zoom-img {
 .app-navbar {
   font-size: 13px;
   letter-spacing: .15em;
+  background-color: transparent;
 }
 .app-navbar .navbar-brand {
   font-size: 13px;
+}
+.navbar,
+.navbar-default,
+.navbar-nav,
+.navbar-header {
+  z-index: 1039;
 }
 /* intro block */
 .app-block-intro {
@@ -9031,6 +9124,19 @@ img.zoom-img {
     font-size: 42px !important;
   }
 }
+.stage-shelf {
+  z-index: 1;
+}
+.transparent {
+  background-color: transparent;
+}
+.v-center {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
 h1.text-uppercase,
 h2.text-uppercase,
 h3.text-uppercase,
@@ -9102,14 +9208,14 @@ h6,
   fill: #bbbbbb;
   opacity: .4;
 }
-.play-video,
-svg .play-video {
-  background-size: 20px 20px;
-  background-image: url("/img/right-arrow-circle.svg");
-  background-position: left center;
-  padding-left: 25px;
+.press-logo {
+  opacity: .7;
+}
+.press-logo:hover {
+  opacity: 1.0;
+}
+.play-video {
   display: inline-block;
-  background-repeat: no-repeat;
   color: #000;
   text-decoration: none;
   opacity: .6;
@@ -9186,6 +9292,23 @@ svg .linkedin {
 .block-light {
   background: #efefef;
   color: #333;
+}
+.title-code {
+  font-family: courier;
+}
+@media screen and (max-width: 768px) {
+  .title-code {
+    font-size: 24px;
+  }
+}
+.block-dev {
+  background: url(/img/backgrounds/dev4.png) repeat;
+  color: #ddd;
+  font-size: 17px;
+}
+.block-dev a {
+  color: #eee;
+  text-decoration: underline;
 }
 .gest-hero-img {
   width: 70%;
